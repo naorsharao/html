@@ -1,0 +1,26 @@
+img {
+	height:285;
+	border:2px solid blue
+}
+
+body {
+	background-color:lightblue;
+	
+}
+
+.pss {color: blue;
+}
+
+.bigfont {
+   font-size: 32px;
+}
+
+#naor {
+     border: 2px solid green;
+	 background-color:yellow;
+	 width:27%
+}
+
+#nana {
+	width:30%;
+}
