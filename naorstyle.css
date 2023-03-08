@@ -1,26 +1,190 @@
-img {
-	height:285;
-	border:2px solid blue
+*{
+  padding:0;
+  margin:0;
+  box-sizing: box-border;
+  font-family: josefin sans'
 }
 
+html{
+	 scroll-behavior:smooth;
+}
+
+body{
+	 background-color:khaki;	
+}
+
+.hero{	
+   	  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('images/images66.jpg');
+	  background-size: cover;
+	  height:100vh;
+	  width:100%;
+	  background-attachment: scrool;
+      color: white;    
+	  background-position:center;
+}
+
+nav{
+    display: flex;
+	align-items: center;	
+	justify-content: space-between;
+	padding-top:35px;
+	padding-left:5%;
+	padding-right:12%;	
+	font-size:20px;
+}
+
+.logo{
+	  font-family:	Georgia, serif;
+	  font-size:45px;
+	  text-align:center;	   
+	  top:5%;
+	  left:50%;	  
+	  background-color:white;color:black;
+      width: 400px;
+      margin: 0;
+	  padding:0;
+      border: 3px solid black;
+	  border-radius: 20px;
+      background-color: lightblue;
+}
+
+nav ul li{
+	      list-style-type: none;
+		  display: inline-block;
+		  margin:0 20px;	
+          background: transparent;	
+          border: 2px solid;
+		  border-radius:2px;		  		  
+}
+
+nav ul li a{
+	        color:white;
+			text-decoration: none;
+			font-weight: bold;
+}
+
+nav ul li a:hover{
+	              color: #ea1538;
+				  transition: .3s;
+}
+
+.about{
+	   text-decoration: none;
+       font-weight: bold;
+       text-transform: capitalize;	
+       font-size:30px;
+       color:blue;	
+	   font-family:Lucida Handwriting;
+	   padding-top: 300px;
+       padding-right: 50px;
+       padding-bottom: 350px;
+       padding-left: 80px;
+} 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 body {
-	background-color:lightblue;
-	
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.pss {color: blue;
+.flip-card{
+           background-color: transparent;
+           width: 300px;
+           height: 258px;
+           perspective: 1000px;
+           padding-top:20px;
 }
 
-.bigfont {
-   font-size: 32px;
+.flip-card-inner{
+                 position: relative;
+                 width: 100%;
+                 height: 100%;
+                 text-align: center;
+                 transition: transform 0.6s;
+                 transform-style: preserve-3d;
+                 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                 padding-bottom:10px;
 }
 
-#naor {
-     border: 2px solid green;
-	 background-color:yellow;
-	 width:27%
+.flip-card:hover .flip-card-inner{
+                                  transform: rotateY(180deg);
 }
 
-#nana {
-	width:30%;
+.flip-card-front, .flip-card-back{
+                                  position: absolute;
+                                  width: 100%;
+                                  height: 100%;
+                                 -webkit-backface-visibility: hidden;
+                                  backface-visibility: hidden;
+}
+
+.flip-card-front{
+                  background-color: #bbb;
+                  color: black;
+}
+
+.flip-card-back{
+                 background-color:lightblue;
+                 color:blue;
+                 transform:rotateY(180deg);
+                 padding-top:30px;
+                 font-size:25px;  
+}
+
+.gallery{ text-decoration: none;
+          font-weight: bold;
+          text-transform: capitalize;	
+          font-size:30px;
+          color:red;	
+	      font-family:Lucida Handwriting;
+	      display: flex;
+	      transition: .3s;
+	      position: relative;
+          padding-top: 100px;
+	      padding-left: 2px;
+	      padding-bottom: 200px; 
+}
+
+img{
+	 height:200px;
+}
+
+.imgLink { border: none; background: none; }
+.imgLink img
+{
+  height: 10rem;
+}
+.imgLink:active img, .imgLink:focus img
+{
+  height: 20rem;
+}
+
+h2{ padding-top: 40px;
+	padding-left: 50px;
+    padding-right: -2500px;	
+	position: absolute;
+}
+
+.social{
+	    padding:25;
+        margin: 0;
+        font-family: 'Josefin Sans',sans-serif;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+		padding-top:85px;
+}
+
+.social a{
+	      width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 20%;
+          margin: 5px 10px;
+          text-decoration: none;
+          font-size: 10px;
+		  list-style-type: none;
+		  display: inline-block;
+		  justify-content: space-between;		
 }
